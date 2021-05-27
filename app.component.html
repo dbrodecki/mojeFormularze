@@ -1,0 +1,29 @@
+<div class="container">
+  <div class="jumbotron">
+      <h1>PROJEKT mojeFORMULARZE</h1>
+      <h2>Formularze reaktywne</h2><br>
+  </div>
+</div>
+
+
+<form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+  <div>
+    <label>
+      Name:<br>
+      <input formControlName="name" placeholder="Your name">
+    </label>
+  </div>
+  <div>
+    <label>
+      Email:<br>
+      <input formControlName="email" placeholder="Your email">
+    </label>
+  </div>
+  <div>
+    <label>
+      Message:<br>
+      <input formControlName="message" placeholder="Your message">
+    </label>
+  </div>
+  <button type="submit">Send</button>
+</form>
